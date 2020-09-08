@@ -2,6 +2,7 @@
 #include "struct_demo/StructDemo.h"
 #include "enum_demo/enum_demo.h"
 #include "class_demo/ClassDemo.h"
+#include "class_demo/ExtendClassDemo.h"
 
 using namespace std;
 const int len = 5;
@@ -83,6 +84,8 @@ void testException()
 {
     try
     {
+        /// 抛出的是引用，需要使用引用捕获异常
+        /// 抛出的是指针，需要捕获指针的异常
         throw invalid_argument("非法参数异常");
     }
     catch (logic_error &e)
@@ -102,8 +105,21 @@ void testFriendClass()
     clist.OutputItem();
 }
 
+/// 父类引用，即便传入子类，依然调用父类实现的方法，不会调用子类实现的方法
+/// 编译器对Parent成员函数进行的是静态绑定，即根据对象定义时的类型来确定调用哪个类的成员函数
+void testExtendClass(extend_class::Parent &p)
+{
+    p.OutputSomething();
+}
+
+void testExtendClass()
+{
+    extend_class::Child c;
+    testExtendClass(c);
+}
+
 int main()
 {
-    testFriendClass();
+    testExtendClass();
     return 0;
 }
