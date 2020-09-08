@@ -1,0 +1,109 @@
+#include <iostream>
+#include "struct_demo/StructDemo.h"
+#include "enum_demo/enum_demo.h"
+#include "class_demo/ClassDemo.h"
+
+using namespace std;
+const int len = 5;
+// 测试typedef
+typedef unsigned char Byte;
+
+#define MUL(x, y) ((x) * (y))
+
+struct Person
+{
+    int age;
+    string name;
+};
+
+class A
+{
+public:
+    unsigned char b;
+};
+
+void test1()
+{
+    int arr[len] = {1, 2, 3, 4, 5};
+    for (int i = 0; i < len; ++i)
+    {
+        cout << "arr[" << i << "] = " << arr[i] << endl;
+    }
+    std::cout << "Hello, World!" << std::endl;
+
+    Person person;
+    person.age = 10;
+    person.name = "haha";
+
+    cout << "age: " << person.age << endl;
+    cout << "name: " << person.name << endl;
+
+    struct PersonInfo
+    {
+        // int age;
+        // string name;
+        // short x;
+        char str[10];
+    } pInfo;
+
+    A a;
+    a.b = 3;
+
+    cout << "b: " << a.b << endl;
+
+    cout << sizeof(pInfo) << endl;
+    cout << sizeof(person) << endl;
+    cout << sizeof(a) << endl;
+}
+
+void testStruct()
+{
+    StructDemo structDemo;
+    structDemo.test();
+}
+
+void testEnum()
+{
+    WeekDey day1 = (WeekDey)3;
+    WeekDey day2 = Friday;
+
+    cout << Wednesday - Friday << endl;
+
+    bool res = day1 > day2;
+    cout << "res = " << res << endl;
+}
+
+void testTypedef()
+{
+    Byte x = -1;
+    cout << x - 1 << endl;
+}
+
+void testException()
+{
+    try
+    {
+        throw invalid_argument("非法参数异常");
+    }
+    catch (logic_error &e)
+    {
+        cout << e.what() << endl;
+    }
+}
+
+void testDefine()
+{
+    cout << MUL(2, 335) << endl;
+}
+
+void testFriendClass()
+{
+    CList clist;
+    clist.OutputItem();
+}
+
+int main()
+{
+    testFriendClass();
+    return 0;
+}

@@ -1,0 +1,42 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/build"
+    },
+    "tasks": [
+        {
+            "label": "cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                ".."
+            ],
+        },
+        {
+            "label": "make", /////////要执行的第二个make命令
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "."
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "cmake"
+            ], ///指定，在执行make之前，需先执行cmake
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true, /// 将焦点转移，方便关闭
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+        }
+    ]
+}
