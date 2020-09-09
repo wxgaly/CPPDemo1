@@ -3,6 +3,7 @@
 #include "enum_demo/enum_demo.h"
 #include "class_demo/ClassDemo.h"
 #include "class_demo/ExtendClassDemo.h"
+#include "class_demo/VirtualClassDemo.h"
 
 using namespace std;
 const int len = 5;
@@ -143,8 +144,14 @@ void testCompilePolymorphism()
     animalShout(bird);
 }
 
+void testRuntimePolymorphism()
+{
+    VirtualClassDemo virtualClassDemo;
+    virtualClassDemo.testRuntimePolymorphism();
+}
+
 int main()
 {
-    testCompilePolymorphism();
+    testRuntimePolymorphism();
     return 0;
 }
