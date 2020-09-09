@@ -118,8 +118,33 @@ void testExtendClass()
     testExtendClass(c);
 }
 
+class Cat
+{
+public:
+     void shout(){ cout << "喵喵~"<<endl; }
+};
+class Bird
+{
+public:
+     void shout(){ cout << "叽喳!"<<endl; }
+};
+
+template <typename T>
+void  animalShout(T & t)
+{
+    t.shout();
+}
+
+void testCompilePolymorphism()
+{
+    Cat cat;
+    animalShout(cat);
+    Bird bird;
+    animalShout(bird);
+}
+
 int main()
 {
-    testExtendClass();
+    testCompilePolymorphism();
     return 0;
 }
