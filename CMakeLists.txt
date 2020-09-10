@@ -15,6 +15,8 @@ add_subdirectory(struct_demo)
 
 add_subdirectory(class_demo)
 
+add_subdirectory(stl_demo)
+
 add_executable(CppDemo1 main.cpp)
 
-target_link_libraries(CppDemo1 struct_demo class_demo)
+target_link_libraries(CppDemo1 struct_demo class_demo stl_demo)

@@ -4,6 +4,7 @@
 #include "class_demo/ClassDemo.h"
 #include "class_demo/ExtendClassDemo.h"
 #include "class_demo/VirtualClassDemo.h"
+#include "stl_demo/stl_demo.h"
 
 using namespace std;
 const int len = 5;
@@ -172,8 +173,14 @@ void testFunTemplate()
     cout << "fret = " << fret << endl;
 }
 
+void testSTLDemo()
+{
+    STLDemo stlDemo;
+    stlDemo.test();
+}
+
 int main()
 {
-    testFunTemplate();
+    testSTLDemo();
     return 0;
 }
