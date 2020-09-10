@@ -122,16 +122,16 @@ void testExtendClass()
 class Cat
 {
 public:
-     void shout(){ cout << "喵喵~"<<endl; }
+    void shout() { cout << "喵喵~" << endl; }
 };
 class Bird
 {
 public:
-     void shout(){ cout << "叽喳!"<<endl; }
+    void shout() { cout << "叽喳!" << endl; }
 };
 
 template <typename T>
-void  animalShout(T & t)
+void animalShout(T &t)
 {
     t.shout();
 }
@@ -150,8 +150,30 @@ void testRuntimePolymorphism()
     virtualClassDemo.testRuntimePolymorphism();
 }
 
+//函数模板
+template <class type, int len>
+type Max(type array[len])
+{
+    type ret = array[0];
+    for (size_t i = 0; i < len; i++)
+    {
+        ret = (ret > array[i]) ? ret : array[i];
+    }
+    return ret;
+}
+
+void testFunTemplate()
+{
+    int array[5] = {123, 4214, 53, 224, 5};
+    int ret = Max<int, 5>(array);
+    float farray[3] = {1.33, 4.422, 5.321};
+    float fret = Max<float, 3>(farray);
+    cout << "ret = " << ret << endl;
+    cout << "fret = " << fret << endl;
+}
+
 int main()
 {
-    testRuntimePolymorphism();
+    testFunTemplate();
     return 0;
 }
