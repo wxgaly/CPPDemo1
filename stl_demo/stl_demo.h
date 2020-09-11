@@ -2,7 +2,7 @@
  * @Author: wangxuguang 
  * @Date: 2020-09-10 11:32:11 
  * @Last Modified by: wangxuguang
- * @Last Modified time: 2020-09-10 21:59:16
+ * @Last Modified time: 2020-09-11 10:31:34
  */
 #include <iostream>
 
@@ -30,3 +30,6 @@ public:
         v.test();
     }
 };
+
+//打印vector
+void printVector(const string &name, vector<int> &v);
