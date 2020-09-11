@@ -2,16 +2,32 @@
  * @Author: wangxuguang 
  * @Date: 2020-09-10 11:32:11 
  * @Last Modified by: wangxuguang
- * @Last Modified time: 2020-09-11 10:31:34
+ * @Last Modified time: 2020-09-11 11:49:29
  */
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-class VectorDemo
+class ISTLTest
+{
+public:
+    virtual void test() = 0;
+    virtual ~ISTLTest() {}
+};
+
+class DequeDemo : public ISTLTest
 {
 public:
     void test();
+    DequeDemo() {}
+};
+
+class VectorDemo : public ISTLTest
+{
+public:
+    void test();
+    VectorDemo() {}
 };
 
 class STLDemo
@@ -26,10 +42,28 @@ public:
     }
     void test()
     {
-        VectorDemo v;
-        v.test();
+        vector<unique_ptr<ISTLTest> > list;
+        list.push_back(make_unique<VectorDemo>());
+        list.push_back(make_unique<DequeDemo>());
+        for(auto & e : list)
+        {
+            e->test();
+        }
     }
 };
 
 //打印vector
 void printVector(const string &name, vector<int> &v);
+
+//通过输入迭代器，完成集合类通用的打印函数
+template <class InputIterator>
+void printIterator(const string &name, InputIterator first, InputIterator last)
+{
+    cout << name << ":";
+    for (; first != last; first++)
+    {
+        /* code */
+        cout << " " << *first;
+    }
+    cout << endl;
+}

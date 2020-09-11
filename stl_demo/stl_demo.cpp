@@ -2,10 +2,25 @@
  * @Author: wangxuguang 
  * @Date: 2020-09-10 18:51:47 
  * @Last Modified by: wangxuguang
- * @Last Modified time: 2020-09-11 10:29:12
+ * @Last Modified time: 2020-09-11 11:42:08
  */
 #include "stl_demo.h"
-#include <vector>
+#include <deque>
+
+void DequeDemo::test()
+{
+    deque<int> intdeque;
+    intdeque.push_back(1);
+    intdeque.push_back(2);
+    intdeque.push_back(3);
+    intdeque.push_back(4);
+    intdeque.push_back(5);
+    printIterator("intdeque", intdeque.begin(), intdeque.end());
+
+    cout << "intdeque.pop_front(): " << endl;
+    intdeque.pop_front();
+    printIterator("intdeque", intdeque.begin(), intdeque.end());
+}
 
 void VectorDemo::test()
 {
@@ -39,10 +54,5 @@ void VectorDemo::test()
 
 void printVector(const string &name, vector<int> &v)
 {
-    cout << name << ":";
-    for (decltype(v.size()) i = 0; i < v.size(); i++)
-    {
-        cout << " " << v[i];
-    }
-    cout << endl;
+    printIterator(name, v.begin(), v.end());
 }
