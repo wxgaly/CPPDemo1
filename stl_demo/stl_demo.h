@@ -16,6 +16,13 @@ public:
     virtual ~ISTLTest() {}
 };
 
+class ListDemo : public ISTLTest
+{
+public:
+    void test();
+    ListDemo() {}
+};
+
 class DequeDemo : public ISTLTest
 {
 public:
@@ -45,7 +52,8 @@ public:
         vector<unique_ptr<ISTLTest> > list;
         list.push_back(make_unique<VectorDemo>());
         list.push_back(make_unique<DequeDemo>());
-        for(auto & e : list)
+        list.push_back(make_unique<ListDemo>());
+        for (auto &e : list)
         {
             e->test();
         }

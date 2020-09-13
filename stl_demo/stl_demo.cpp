@@ -6,6 +6,16 @@
  */
 #include "stl_demo.h"
 #include <deque>
+#include <list>
+
+void ListDemo::test()
+{
+    int array[10] = {9, 3, 7, 8, 6, 4, 5, 0, 2, 1};
+    list<int> list(array, array + 10);
+    printIterator("排序前list:", list.begin(), list.end());
+    list.sort();
+    printIterator("排序后list:", list.begin(), list.end());
+}
 
 void DequeDemo::test()
 {
