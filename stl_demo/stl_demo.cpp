@@ -7,14 +7,46 @@
 #include "stl_demo.h"
 #include <deque>
 #include <list>
+#include <set>
+
+void SetDemo::test()
+{
+    set<int> intset;
+    intset.insert(9);
+    intset.insert(23);
+    intset.insert(3);
+    intset.insert(6);
+    intset.insert(30);
+    intset.insert(17);
+    intset.insert(17); //添加重复元素
+    printIterator("set", intset.begin(), intset.end());
+    intset.erase(17);
+    printIterator("set", intset.begin(), intset.end());
+    
+    set<int>::iterator it = intset.find(30);
+    if (it == intset.end()) //不等于end即为找到元素
+    {
+        cout << "not find 30" << endl;
+    }
+    else
+    {
+        cout << "find 30" << endl;
+    }
+    it = intset.find(31);
+
+    if (it == intset.end())
+    {
+        cout << "not find 31" << endl;
+    }
+}
 
 void ListDemo::test()
 {
     int array[10] = {9, 3, 7, 8, 6, 4, 5, 0, 2, 1};
     list<int> list(array, array + 10);
-    printIterator("排序前list:", list.begin(), list.end());
+    printIterator("排序前list", list.begin(), list.end());
     list.sort();
-    printIterator("排序后list:", list.begin(), list.end());
+    printIterator("排序后list", list.begin(), list.end());
 }
 
 void DequeDemo::test()
