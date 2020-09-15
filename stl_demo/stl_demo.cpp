@@ -9,6 +9,42 @@
 #include <list>
 #include <set>
 #include <map>
+#include <algorithm>
+
+void ForEachDemo::test()
+{
+    int arr[8] = {1, 2, 2, 2, 5, 6, 6, 7};
+    vector<int> vector1(arr, arr + 8);
+    for_each(vector1.begin(), vector1.end(), [&](int val) { cout << val << " "; });
+    cout << endl;
+    // fill(vector1.begin(), vector1.end(), 1);
+    // for_each(vector1.begin(), vector1.end(), [&](int val) { cout << val << " "; });
+    // cout << endl;
+    rotate(vector1.begin(), vector1.begin() + 4, vector1.end());
+    for_each(vector1.begin(), vector1.end(), [&](int val) { cout << val << " "; });
+    cout << endl;
+}
+
+void CountDemo::test()
+{
+    int arr[8] = {1, 2, 2, 2, 5, 6, 6, 7};
+    vector<int> vector1(arr, arr + 8);
+    int res = count(vector1.begin(), vector1.end(), 2);
+    cout << "2的个数: " << res << endl;
+    res = count(vector1.begin(), vector1.end(), 6);
+    cout << "6的个数: " << res << endl;
+}
+
+void AdjacentFindDemo::test()
+{
+    int arr[8] = {1, 2, 2, 4, 5, 6, 6, 7};
+    vector<int> vector1(arr, arr + 8);
+    vector<int>::iterator it;
+    it = adjacent_find(vector1.begin(), vector1.end());
+    cout << *it++ << " " << *it << endl;
+    it = adjacent_find(it, vector1.end());
+    cout << *it++ << " " << *it << endl;
+}
 
 /*
 * 多行注释

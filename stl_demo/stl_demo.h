@@ -16,6 +16,27 @@ public:
     virtual ~ISTLTest() {}
 };
 
+class ForEachDemo : public ISTLTest
+{
+public:
+    void test();
+    ForEachDemo() {}
+};
+
+class CountDemo : public ISTLTest
+{
+public:
+    void test();
+    CountDemo() {}
+};
+
+class AdjacentFindDemo : public ISTLTest
+{
+public:
+    void test();
+    AdjacentFindDemo() {}
+};
+
 class MapDemo : public ISTLTest
 {
 public:
@@ -69,6 +90,9 @@ public:
         list.push_back(make_unique<ListDemo>());
         list.push_back(make_unique<SetDemo>());
         list.push_back(make_unique<MapDemo>());
+        list.push_back(make_unique<AdjacentFindDemo>());
+        list.push_back(make_unique<CountDemo>());
+        list.push_back(make_unique<ForEachDemo>());
         for (auto &e : list)
         {
             e->test();
