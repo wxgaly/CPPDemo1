@@ -8,6 +8,41 @@
 #include <deque>
 #include <list>
 #include <set>
+#include <map>
+
+/*
+* 多行注释
+* ？？
+*/
+void MapDemo::test()
+{
+    map<int, char> cMap;
+    cMap[1] = 'A';
+    cMap[2] = 'B';
+    cMap[3] = 'C';
+    cMap[4] = 'D';
+    cMap[5] = 'E';
+    cMap[6] = 'F';
+    map<int, char>::iterator it;
+    for (it = cMap.begin(); it != cMap.end(); it++)
+    {
+        cout << (*it).first << "->";
+        cout << (*it).second << endl;
+    }
+    //测试查找
+    it = cMap.find(5);
+    if (it != cMap.end())
+    {
+        cout << (*it).first << ":" << (*it).second << endl;
+    }
+    else
+    {
+        cout << "not found 5" << endl;
+    }
+
+    //map特性
+    cout << cMap[2] << endl;
+}
 
 void SetDemo::test()
 {
@@ -22,7 +57,7 @@ void SetDemo::test()
     printIterator("set", intset.begin(), intset.end());
     intset.erase(17);
     printIterator("set", intset.begin(), intset.end());
-    
+
     set<int>::iterator it = intset.find(30);
     if (it == intset.end()) //不等于end即为找到元素
     {

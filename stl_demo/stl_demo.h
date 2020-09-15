@@ -16,6 +16,13 @@ public:
     virtual ~ISTLTest() {}
 };
 
+class MapDemo : public ISTLTest
+{
+public:
+    void test();
+    MapDemo() {}
+};
+
 class SetDemo : public ISTLTest
 {
 public:
@@ -61,6 +68,7 @@ public:
         list.push_back(make_unique<DequeDemo>());
         list.push_back(make_unique<ListDemo>());
         list.push_back(make_unique<SetDemo>());
+        list.push_back(make_unique<MapDemo>());
         for (auto &e : list)
         {
             e->test();

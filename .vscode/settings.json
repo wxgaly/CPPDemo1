@@ -61,7 +61,10 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "unordered_map": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "set": "cpp",
+        "map": "cpp",
+        "__tree": "cpp"
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
