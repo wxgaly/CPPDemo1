@@ -6,6 +6,7 @@
  */
 #include <iostream>
 #include <vector>
+#include "typeinfo"
 
 using namespace std;
 
@@ -97,6 +98,18 @@ public:
         {
             e->test();
         }
+        //RTTI,类型识别,向上转型
+        ISTLTest *stl = new ForEachDemo();
+        cout << typeid(*stl).name() << endl;
+        ForEachDemo *foreachDemo = dynamic_cast<ForEachDemo *>(stl);
+        foreachDemo->test();
+        delete foreachDemo;
+
+        //静态转换
+        ISTLTest *stl1 = (ISTLTest *)new ForEachDemo();
+        ForEachDemo *foreachDemo1 = static_cast<ForEachDemo *>(stl1);
+        foreachDemo1->test();
+        delete foreachDemo1;
     }
 };
 
