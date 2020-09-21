@@ -6,6 +6,7 @@
 #include "class_demo/VirtualClassDemo.h"
 #include "stl_demo/stl_demo.h"
 #include "file_demo/FileDemo.h"
+#include "socket_demo/SocketDemo.h"
 
 using namespace std;
 const int len = 5;
@@ -186,8 +187,14 @@ void testFileDemo()
     fileDemo.test();
 }
 
+void testSocketDemo()
+{
+    ServerSocketDemo serverSocket;
+    serverSocket.test();
+}
+
 int main()
 {
-    testFileDemo();
+    testSocketDemo();
     return 0;
 }
