@@ -7,6 +7,7 @@
 #include "stl_demo/stl_demo.h"
 #include "file_demo/FileDemo.h"
 #include "socket_demo/SocketDemo.h"
+#include "leetcode/Leetcode.h"
 
 using namespace std;
 const int len = 5;
@@ -193,8 +194,14 @@ void testSocketDemo()
     serverSocket.test();
 }
 
+void testLeetcode()
+{
+    Leetcode leetcode;
+    leetcode.test();
+}
+
 int main()
 {
-    testSocketDemo();
+    testLeetcode();
     return 0;
 }
