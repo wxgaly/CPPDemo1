@@ -2,7 +2,7 @@
  * @Author: gary.wang 
  * @Date: 2020-11-04 14:43:00 
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-04 15:45:07
+ * @Last Modified time: 2020-11-05 16:52:19
  * 
  * 
  *  Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the ith kid has.
@@ -41,12 +41,7 @@
  * 
  * 
  */
-#include <vector>
-#include <iostream>
-#include <algorithm>
 #include "../ITest.h"
-
-using namespace std;
 
 class KidsWiththeGreatestNumberofCandies : public ITest
 {
