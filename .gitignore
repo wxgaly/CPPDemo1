@@ -1,2 +1,4 @@
 ### cmake project ###
 build
+cmake-build-debug
+.idea
