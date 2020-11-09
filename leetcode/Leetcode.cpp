@@ -12,6 +12,7 @@
 #include "easy/CheckFormationThroughConcatenation.hpp"
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/ShuffletheArray.hpp"
+#include "easy/DesignParkingSystem.hpp"
 
 using namespace std;
 
@@ -21,7 +22,8 @@ void Leetcode::test()
     // list.push_back(make_unique<KidsWiththeGreatestNumberofCandies>());
     // list.push_back(make_unique<CheckFormationThroughConcatenation>());
     // list.push_back(make_unique<NumberofGoodPairs>());
-    list.push_back(make_unique<ShuffletheArray>());
+    // list.push_back(make_unique<ShuffletheArray>());
+    list.push_back(make_unique<ParkingSystem>());
 
 
     for (auto &e : list)
