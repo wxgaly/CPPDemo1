@@ -13,6 +13,7 @@
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/ShuffletheArray.hpp"
 #include "easy/DesignParkingSystem.hpp"
+#include "easy/XOROperationinanArray.hpp"
 
 using namespace std;
 
@@ -23,7 +24,8 @@ void Leetcode::test()
     // list.push_back(make_unique<CheckFormationThroughConcatenation>());
     // list.push_back(make_unique<NumberofGoodPairs>());
     // list.push_back(make_unique<ShuffletheArray>());
-    list.push_back(make_unique<ParkingSystem>());
+    // list.push_back(make_unique<ParkingSystem>());
+    list.push_back(make_unique<XOROperationinanArray>());
 
 
     for (auto &e : list)
