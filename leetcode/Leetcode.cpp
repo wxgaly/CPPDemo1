@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50 
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-11 14:46:53
+ * @Last Modified time: 2020-11-11 15:12:39
  */
 #include <iostream>
 #include <vector>
@@ -15,6 +15,8 @@
 #include "easy/DesignParkingSystem.hpp"
 #include "easy/XOROperationinanArray.hpp"
 #include "easy/GuessNumbers.hpp"
+#include "easy/TakeCoins.hpp"
+
 using namespace std;
 
 void Leetcode::test()
@@ -26,7 +28,8 @@ void Leetcode::test()
     // list.push_back(make_unique<ShuffletheArray>());
     // list.push_back(make_unique<ParkingSystem>());
     // list.push_back(make_unique<XOROperationinanArray>());
-    list.push_back(make_unique<GuessNumbers>());
+    // list.push_back(make_unique<GuessNumbers>());
+    list.push_back(make_unique<TakeCoins>());
 
     for (auto &e : list)
     {
