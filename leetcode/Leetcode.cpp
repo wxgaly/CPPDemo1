@@ -1,27 +1,27 @@
 /*
  * @Author: gary.wang
- * @Date: 2020-11-04 14:34:50 
+ * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-12 14:16:49
+ * @Last Modified time: 2020-11-13 14:27:09
  */
 #include <iostream>
 #include <vector>
 
 #include "Leetcode.h"
-#include "easy/KidsWiththeGreatestNumberofCandies.hpp"
 #include "easy/CheckFormationThroughConcatenation.hpp"
+#include "easy/DesignParkingSystem.hpp"
+#include "easy/GuessNumbers.hpp"
+#include "easy/KidsWiththeGreatestNumberofCandies.hpp"
+#include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/ShuffletheArray.hpp"
-#include "easy/DesignParkingSystem.hpp"
-#include "easy/XOROperationinanArray.hpp"
-#include "easy/GuessNumbers.hpp"
-#include "easy/TakeCoins.hpp"
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
+#include "easy/TakeCoins.hpp"
+#include "easy/XOROperationinanArray.hpp"
 
 using namespace std;
 
-void Leetcode::test()
-{
+void Leetcode::test() {
     vector<unique_ptr<ITest>> list;
     // list.push_back(make_unique<KidsWiththeGreatestNumberofCandies>());
     // list.push_back(make_unique<CheckFormationThroughConcatenation>());
@@ -31,11 +31,10 @@ void Leetcode::test()
     // list.push_back(make_unique<XOROperationinanArray>());
     // list.push_back(make_unique<GuessNumbers>());
     // list.push_back(make_unique<TakeCoins>());
-    list.push_back(make_unique<SubtracttheProductandSumofDigitsofanInteger>());
-    
+    // list.push_back(make_unique<SubtracttheProductandSumofDigitsofanInteger>());
+    list.push_back(make_unique<MaximumNestingDepthoftheParentheses>());
 
-    for (auto &e : list)
-    {
+    for (auto &e : list) {
         e->test();
     }
 }
