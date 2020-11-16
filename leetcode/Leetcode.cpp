@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-13 14:27:09
+ * @Last Modified time: 2020-11-16 14:25:19
  */
 #include <iostream>
 #include <vector>
@@ -14,6 +14,7 @@
 #include "easy/KidsWiththeGreatestNumberofCandies.hpp"
 #include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
+#include "easy/NumberofStepstoReduceaNumbertoZero.hpp"
 #include "easy/ShuffletheArray.hpp"
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
@@ -32,7 +33,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<GuessNumbers>());
     // list.push_back(make_unique<TakeCoins>());
     // list.push_back(make_unique<SubtracttheProductandSumofDigitsofanInteger>());
-    list.push_back(make_unique<MaximumNestingDepthoftheParentheses>());
+    // list.push_back(make_unique<MaximumNestingDepthoftheParentheses>());
+    list.push_back(make_unique<NumberofStepstoReduceaNumbertoZero>());
 
     for (auto &e : list) {
         e->test();
