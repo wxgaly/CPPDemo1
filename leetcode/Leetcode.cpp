@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-16 14:25:19
+ * @Last Modified time: 2020-11-17 14:26:38
  */
 #include <iostream>
 #include <vector>
@@ -19,6 +19,7 @@
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
+#include "easy/QuickCalBot.hpp"
 
 using namespace std;
 
@@ -34,7 +35,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<TakeCoins>());
     // list.push_back(make_unique<SubtracttheProductandSumofDigitsofanInteger>());
     // list.push_back(make_unique<MaximumNestingDepthoftheParentheses>());
-    list.push_back(make_unique<NumberofStepstoReduceaNumbertoZero>());
+    // list.push_back(make_unique<NumberofStepstoReduceaNumbertoZero>());
+    list.push_back(make_unique<QuickCalBot>());
 
     for (auto &e : list) {
         e->test();
