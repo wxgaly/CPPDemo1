@@ -2,12 +2,13 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-17 14:26:38
+ * @Last Modified time: 2020-11-19 14:29:47
  */
 #include <iostream>
 #include <vector>
 
 #include "Leetcode.h"
+//简单
 #include "easy/CheckFormationThroughConcatenation.hpp"
 #include "easy/DesignParkingSystem.hpp"
 #include "easy/GuessNumbers.hpp"
@@ -15,11 +16,14 @@
 #include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/NumberofStepstoReduceaNumbertoZero.hpp"
+#include "easy/QuickCalBot.hpp"
 #include "easy/ShuffletheArray.hpp"
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
-#include "easy/QuickCalBot.hpp"
+
+//中等
+#include "medium/ArithmeticSubarrays.hpp"
 
 using namespace std;
 
@@ -36,7 +40,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<SubtracttheProductandSumofDigitsofanInteger>());
     // list.push_back(make_unique<MaximumNestingDepthoftheParentheses>());
     // list.push_back(make_unique<NumberofStepstoReduceaNumbertoZero>());
-    list.push_back(make_unique<QuickCalBot>());
+    // list.push_back(make_unique<QuickCalBot>());
+    list.push_back(make_unique<ArithmeticSubarrays>());
 
     for (auto &e : list) {
         e->test();

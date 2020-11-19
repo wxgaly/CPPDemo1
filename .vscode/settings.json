@@ -65,7 +65,8 @@
         "set": "cpp",
         "map": "cpp",
         "__tree": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "list": "cpp"
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
