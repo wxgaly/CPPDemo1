@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-20 14:33:10
+ * @Last Modified time: 2020-11-23 14:30:41
  */
 #include <iostream>
 #include <vector>
@@ -25,6 +25,7 @@
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
+#include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
 
 using namespace std;
 
@@ -43,7 +44,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<NumberofStepstoReduceaNumbertoZero>());
     // list.push_back(make_unique<QuickCalBot>());
     // list.push_back(make_unique<ArithmeticSubarrays>());
-    list.push_back(make_unique<MaximumNumberofCoinsYouCanGet>());
+    // list.push_back(make_unique<MaximumNumberofCoinsYouCanGet>());
+    list.push_back(make_unique<MinimumNumberofArrowstoBurstBalloons>());
 
     for (auto &e : list) {
         e->test();
