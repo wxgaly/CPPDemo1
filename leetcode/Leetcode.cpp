@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-24 15:17:04
+ * @Last Modified time: 2020-11-25 15:59:07
  */
 #include <iostream>
 #include <vector>
@@ -12,6 +12,7 @@
 #include "easy/CheckFormationThroughConcatenation.hpp"
 #include "easy/DesignParkingSystem.hpp"
 #include "easy/GuessNumbers.hpp"
+#include "easy/IncreasingDecreasingString.hpp"
 #include "easy/KidsWiththeGreatestNumberofCandies.hpp"
 #include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
@@ -47,7 +48,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<ArithmeticSubarrays>());
     // list.push_back(make_unique<MaximumNumberofCoinsYouCanGet>());
     // list.push_back(make_unique<MinimumNumberofArrowstoBurstBalloons>());
-    list.push_back(make_unique<CountCompleteTreeNodes>());
+    // list.push_back(make_unique<CountCompleteTreeNodes>());
+    list.push_back(make_unique<IncreasingDecreasingString>());
 
     for (auto &e : list) {
         e->test();
