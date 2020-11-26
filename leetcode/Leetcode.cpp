@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-25 15:59:07
+ * @Last Modified time: 2020-11-26 16:50:28
  */
 #include <iostream>
 #include <vector>
@@ -29,6 +29,9 @@
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
 
+//困难
+#include "hard/MaximumGap.hpp"
+
 using namespace std;
 
 void Leetcode::test() {
@@ -49,7 +52,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<MaximumNumberofCoinsYouCanGet>());
     // list.push_back(make_unique<MinimumNumberofArrowstoBurstBalloons>());
     // list.push_back(make_unique<CountCompleteTreeNodes>());
-    list.push_back(make_unique<IncreasingDecreasingString>());
+    // list.push_back(make_unique<IncreasingDecreasingString>());
+    list.push_back(make_unique<MaximumGap>());
 
     for (auto &e : list) {
         e->test();
