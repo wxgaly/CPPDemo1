@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-26 16:50:28
+ * @Last Modified time: 2020-11-27 15:45:58
  */
 #include <iostream>
 #include <vector>
@@ -26,6 +26,7 @@
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
 #include "medium/CountCompleteTreeNodes.hpp"
+#include "medium/FourSumII.hpp"
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
 
@@ -53,7 +54,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<MinimumNumberofArrowstoBurstBalloons>());
     // list.push_back(make_unique<CountCompleteTreeNodes>());
     // list.push_back(make_unique<IncreasingDecreasingString>());
-    list.push_back(make_unique<MaximumGap>());
+    // list.push_back(make_unique<MaximumGap>());
+    list.push_back(make_unique<FourSumII>());
 
     for (auto &e : list) {
         e->test();
