@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-11-27 15:45:58
+ * @Last Modified time: 2020-12-02 14:26:52
  */
 #include <iostream>
 #include <vector>
@@ -32,6 +32,7 @@
 
 //困难
 #include "hard/MaximumGap.hpp"
+#include "hard/CreateMaximumNumber.hpp"
 
 using namespace std;
 
@@ -55,7 +56,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<CountCompleteTreeNodes>());
     // list.push_back(make_unique<IncreasingDecreasingString>());
     // list.push_back(make_unique<MaximumGap>());
-    list.push_back(make_unique<FourSumII>());
+    // list.push_back(make_unique<FourSumII>());
+    list.push_back(make_unique<CreateMaximumNumber>());
 
     for (auto &e : list) {
         e->test();
