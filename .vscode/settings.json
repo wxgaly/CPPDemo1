@@ -71,5 +71,6 @@
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 100
+    "files.autoSaveDelay": 100,
+    "cmake.configureOnOpen": true
 }
