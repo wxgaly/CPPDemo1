@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-12-02 14:26:52
+ * @Last Modified time: 2020-12-07 14:15:13
  */
 #include <iostream>
 #include <vector>
@@ -29,10 +29,11 @@
 #include "medium/FourSumII.hpp"
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
+#include "medium/ScoreAfterFlippingMatrix.hpp"
 
 //困难
-#include "hard/MaximumGap.hpp"
 #include "hard/CreateMaximumNumber.hpp"
+#include "hard/MaximumGap.hpp"
 
 using namespace std;
 
@@ -57,7 +58,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<IncreasingDecreasingString>());
     // list.push_back(make_unique<MaximumGap>());
     // list.push_back(make_unique<FourSumII>());
-    list.push_back(make_unique<CreateMaximumNumber>());
+    // list.push_back(make_unique<CreateMaximumNumber>());
+    list.push_back(make_unique<ScoreAfterFlippingMatrix>());
 
     for (auto &e : list) {
         e->test();
