@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-12-07 14:15:13
+ * @Last Modified time: 2020-12-11 14:29:38
  */
 #include <iostream>
 #include <vector>
@@ -26,6 +26,7 @@
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
 #include "medium/CountCompleteTreeNodes.hpp"
+#include "medium/Dota2Senate.hpp"
 #include "medium/FourSumII.hpp"
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
@@ -59,7 +60,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<MaximumGap>());
     // list.push_back(make_unique<FourSumII>());
     // list.push_back(make_unique<CreateMaximumNumber>());
-    list.push_back(make_unique<ScoreAfterFlippingMatrix>());
+    // list.push_back(make_unique<ScoreAfterFlippingMatrix>());
+    list.push_back(make_unique<Dota2Senate>());
 
     for (auto &e : list) {
         e->test();
