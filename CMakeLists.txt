@@ -6,6 +6,8 @@ aux_source_directory(. DIR_ROOT_SRCS)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# set(CMAKE_CXX_FLAGS  "-fno-elide-constructors") 
+
 # 添加头文件路径
 include_directories(
         ${PROJECT_SOURCE_DIR}/struct_demo
