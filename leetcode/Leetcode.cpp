@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-12-11 14:29:38
+ * @Last Modified time: 2020-12-14 14:13:45
  */
 #include <iostream>
 #include <vector>
@@ -31,6 +31,7 @@
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
 #include "medium/ScoreAfterFlippingMatrix.hpp"
+#include "medium/PartitioningIntoMinimumNumberOfDeciBinaryNumbers.hpp"
 
 //困难
 #include "hard/CreateMaximumNumber.hpp"
@@ -61,7 +62,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<FourSumII>());
     // list.push_back(make_unique<CreateMaximumNumber>());
     // list.push_back(make_unique<ScoreAfterFlippingMatrix>());
-    list.push_back(make_unique<Dota2Senate>());
+    // list.push_back(make_unique<Dota2Senate>());
+    list.push_back(make_unique<PartitioningIntoMinimumNumberOfDeciBinaryNumbers>());
 
     for (auto &e : list) {
         e->test();
