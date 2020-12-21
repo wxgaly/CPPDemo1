@@ -67,7 +67,8 @@
         "__tree": "cpp",
         "stack": "cpp",
         "list": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "fstream": "cpp"
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
