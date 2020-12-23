@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-12-15 15:07:55
+ * @Last Modified time: 2020-12-23 14:23:42
  */
 #include <iostream>
 #include <vector>
@@ -22,6 +22,7 @@
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
+#include "easy/FirstUniqueCharacterinaString.hpp"
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
@@ -65,7 +66,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<ScoreAfterFlippingMatrix>());
     // list.push_back(make_unique<Dota2Senate>());
     // list.push_back(make_unique<PartitioningIntoMinimumNumberOfDeciBinaryNumbers>());
-    list.push_back(make_unique<MonotoneIncreasingDigits>());
+    // list.push_back(make_unique<MonotoneIncreasingDigits>());
+    list.push_back(make_unique<FirstUniqueCharacterinaString>());
 
     for (auto &e : list) {
         e->test();
