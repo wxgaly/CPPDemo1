@@ -38,6 +38,7 @@
 //困难
 #include "hard/CreateMaximumNumber.hpp"
 #include "hard/MaximumGap.hpp"
+#include "hard/PatchingArray.hpp"
 
 using namespace std;
 
@@ -67,7 +68,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<Dota2Senate>());
     // list.push_back(make_unique<PartitioningIntoMinimumNumberOfDeciBinaryNumbers>());
     // list.push_back(make_unique<MonotoneIncreasingDigits>());
-    list.push_back(make_unique<FirstUniqueCharacterinaString>());
+    // list.push_back(make_unique<FirstUniqueCharacterinaString>());
+    list.push_back(make_unique<PatchingArray>());
 
     for (auto &e : list) {
         e->test();

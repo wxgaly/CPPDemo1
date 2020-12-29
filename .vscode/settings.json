@@ -68,7 +68,8 @@
         "stack": "cpp",
         "list": "cpp",
         "queue": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "deque": "cpp"
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
