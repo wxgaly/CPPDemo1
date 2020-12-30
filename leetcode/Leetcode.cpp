@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-12-23 14:23:42
+ * @Last Modified time: 2020-12-30 23:34:35
  */
 #include <iostream>
 #include <vector>
@@ -23,6 +23,7 @@
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
 #include "easy/FirstUniqueCharacterinaString.hpp"
+#include "easy/LastStoneWeight.hpp"
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
@@ -69,7 +70,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<PartitioningIntoMinimumNumberOfDeciBinaryNumbers>());
     // list.push_back(make_unique<MonotoneIncreasingDigits>());
     // list.push_back(make_unique<FirstUniqueCharacterinaString>());
-    list.push_back(make_unique<PatchingArray>());
+    // list.push_back(make_unique<PatchingArray>());
+    list.push_back(make_unique<LastStoneWeight>());
 
     for (auto &e : list) {
         e->test();
