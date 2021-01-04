@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2020-12-30 23:34:35
+ * @Last Modified time: 2021-01-04 19:49:44
  */
 #include <iostream>
 #include <vector>
@@ -11,9 +11,12 @@
 //简单
 #include "easy/CheckFormationThroughConcatenation.hpp"
 #include "easy/DesignParkingSystem.hpp"
+#include "easy/FibonacciNumber.hpp"
+#include "easy/FirstUniqueCharacterinaString.hpp"
 #include "easy/GuessNumbers.hpp"
 #include "easy/IncreasingDecreasingString.hpp"
 #include "easy/KidsWiththeGreatestNumberofCandies.hpp"
+#include "easy/LastStoneWeight.hpp"
 #include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/NumberofStepstoReduceaNumbertoZero.hpp"
@@ -22,8 +25,6 @@
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
-#include "easy/FirstUniqueCharacterinaString.hpp"
-#include "easy/LastStoneWeight.hpp"
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
@@ -71,7 +72,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<MonotoneIncreasingDigits>());
     // list.push_back(make_unique<FirstUniqueCharacterinaString>());
     // list.push_back(make_unique<PatchingArray>());
-    list.push_back(make_unique<LastStoneWeight>());
+    // list.push_back(make_unique<LastStoneWeight>());
+    list.push_back(make_unique<FibonacciNumber>());
 
     for (auto &e : list) {
         e->test();
