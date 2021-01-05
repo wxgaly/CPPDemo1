@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-04 19:49:44
+ * @Last Modified time: 2021-01-05 16:15:53
  */
 #include <iostream>
 #include <vector>
@@ -25,6 +25,7 @@
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
+#include "easy/PositionsofLargeGroups.hpp"
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
@@ -73,7 +74,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<FirstUniqueCharacterinaString>());
     // list.push_back(make_unique<PatchingArray>());
     // list.push_back(make_unique<LastStoneWeight>());
-    list.push_back(make_unique<FibonacciNumber>());
+    // list.push_back(make_unique<FibonacciNumber>());
+    list.push_back(make_unique<PositionsofLargeGroups>());
 
     for (auto &e : list) {
         e->test();
