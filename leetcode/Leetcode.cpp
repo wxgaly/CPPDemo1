@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-05 16:15:53
+ * @Last Modified time: 2021-01-07 14:40:10
  */
 #include <iostream>
 #include <vector>
@@ -20,12 +20,12 @@
 #include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/NumberofStepstoReduceaNumbertoZero.hpp"
+#include "easy/PositionsofLargeGroups.hpp"
 #include "easy/QuickCalBot.hpp"
 #include "easy/ShuffletheArray.hpp"
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
-#include "easy/PositionsofLargeGroups.hpp"
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
@@ -33,6 +33,7 @@
 #include "medium/Dota2Senate.hpp"
 #include "medium/FourSumII.hpp"
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
+#include "medium/MergeInBetweenLinkedLists.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
 #include "medium/MonotoneIncreasingDigits.hpp"
 #include "medium/PartitioningIntoMinimumNumberOfDeciBinaryNumbers.hpp"
@@ -75,7 +76,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<PatchingArray>());
     // list.push_back(make_unique<LastStoneWeight>());
     // list.push_back(make_unique<FibonacciNumber>());
-    list.push_back(make_unique<PositionsofLargeGroups>());
+    // list.push_back(make_unique<PositionsofLargeGroups>());
+    list.push_back(make_unique<MergeInBetweenLinkedLists>());
 
     for (auto &e : list) {
         e->test();
