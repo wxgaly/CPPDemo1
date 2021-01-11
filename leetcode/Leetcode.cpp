@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-07 14:40:10
+ * @Last Modified time: 2021-01-11 15:49:40
  */
 #include <iostream>
 #include <vector>
@@ -38,6 +38,7 @@
 #include "medium/MonotoneIncreasingDigits.hpp"
 #include "medium/PartitioningIntoMinimumNumberOfDeciBinaryNumbers.hpp"
 #include "medium/ScoreAfterFlippingMatrix.hpp"
+#include "medium/SwappingNodesinaLinkedList.hpp"
 
 //困难
 #include "hard/CreateMaximumNumber.hpp"
@@ -77,7 +78,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<LastStoneWeight>());
     // list.push_back(make_unique<FibonacciNumber>());
     // list.push_back(make_unique<PositionsofLargeGroups>());
-    list.push_back(make_unique<MergeInBetweenLinkedLists>());
+    // list.push_back(make_unique<MergeInBetweenLinkedLists>());
+    list.push_back(make_unique<SwappingNodesinaLinkedList>());
 
     for (auto &e : list) {
         e->test();
