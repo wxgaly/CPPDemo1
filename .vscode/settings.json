@@ -69,7 +69,10 @@
         "list": "cpp",
         "queue": "cpp",
         "fstream": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "iomanip": "cpp",
+        "unordered_set": "cpp"
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
