@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-20 17:37:21
+ * @Last Modified time: 2021-01-21 15:32:03
  */
 #include <iostream>
 #include <vector>
@@ -17,6 +17,7 @@
 #include "easy/IncreasingDecreasingString.hpp"
 #include "easy/KidsWiththeGreatestNumberofCandies.hpp"
 #include "easy/LastStoneWeight.hpp"
+#include "easy/MatrixDiagonalSum.hpp"
 #include "easy/MaximumNestingDepthoftheParentheses.hpp"
 #include "easy/NumberofGoodPairs.hpp"
 #include "easy/NumberofStepstoReduceaNumbertoZero.hpp"
@@ -81,7 +82,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<PositionsofLargeGroups>());
     // list.push_back(make_unique<MergeInBetweenLinkedLists>());
     // list.push_back(make_unique<SwappingNodesinaLinkedList>());
-    list.push_back(make_unique<RichestCustomerWealth>());
+    // list.push_back(make_unique<RichestCustomerWealth>());
+    list.push_back(make_unique<MatrixDiagonalSum>());
 
     for (auto &e : list) {
         e->test();
