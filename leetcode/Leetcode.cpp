@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-18 16:23:55
+ * @Last Modified time: 2021-01-20 17:37:21
  */
 #include <iostream>
 #include <vector>
@@ -22,6 +22,7 @@
 #include "easy/NumberofStepstoReduceaNumbertoZero.hpp"
 #include "easy/PositionsofLargeGroups.hpp"
 #include "easy/QuickCalBot.hpp"
+#include "easy/RichestCustomerWealth.hpp"
 #include "easy/ShuffletheArray.hpp"
 #include "easy/SubtracttheProductandSumofDigitsofanInteger.hpp"
 #include "easy/TakeCoins.hpp"
@@ -79,7 +80,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<FibonacciNumber>());
     // list.push_back(make_unique<PositionsofLargeGroups>());
     // list.push_back(make_unique<MergeInBetweenLinkedLists>());
-    list.push_back(make_unique<SwappingNodesinaLinkedList>());
+    // list.push_back(make_unique<SwappingNodesinaLinkedList>());
+    list.push_back(make_unique<RichestCustomerWealth>());
 
     for (auto &e : list) {
         e->test();
