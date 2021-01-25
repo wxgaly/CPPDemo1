@@ -74,7 +74,8 @@
         "iomanip": "cpp",
         "unordered_set": "cpp",
         "__undef_macros": "cpp",
-        "memory_resource": "cpp"
+        "memory_resource": "cpp",
+        "filesystem": "cpp"
     },
     "editor.fontSize": 12,
     "files.autoSave": "afterDelay",
