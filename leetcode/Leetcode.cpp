@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-25 15:59:55
+ * @Last Modified time: 2021-01-27 15:13:10
  */
 #include <iostream>
 #include <vector>
@@ -40,6 +40,7 @@
 #include "medium/MonotoneIncreasingDigits.hpp"
 #include "medium/PartitioningIntoMinimumNumberOfDeciBinaryNumbers.hpp"
 #include "medium/ScoreAfterFlippingMatrix.hpp"
+#include "medium/ScoreofParentheses.hpp"
 #include "medium/SwappingNodesinaLinkedList.hpp"
 
 //困难
@@ -83,7 +84,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<MergeInBetweenLinkedLists>());
     // list.push_back(make_unique<SwappingNodesinaLinkedList>());
     // list.push_back(make_unique<RichestCustomerWealth>());
-    list.push_back(make_unique<MatrixDiagonalSum>());
+    // list.push_back(make_unique<MatrixDiagonalSum>());
+    list.push_back(make_unique<ScoreofParentheses>());
 
     for (auto &e : list) {
         e->test();
