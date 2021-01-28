@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-27 15:13:10
+ * @Last Modified time: 2021-01-28 15:11:10
  */
 #include <iostream>
 #include <vector>
@@ -38,6 +38,7 @@
 #include "medium/MergeInBetweenLinkedLists.hpp"
 #include "medium/MinimumNumberofArrowstoBurstBalloons.hpp"
 #include "medium/MonotoneIncreasingDigits.hpp"
+#include "medium/NextGreaterNodeInLinkedList.hpp"
 #include "medium/PartitioningIntoMinimumNumberOfDeciBinaryNumbers.hpp"
 #include "medium/ScoreAfterFlippingMatrix.hpp"
 #include "medium/ScoreofParentheses.hpp"
@@ -85,7 +86,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<SwappingNodesinaLinkedList>());
     // list.push_back(make_unique<RichestCustomerWealth>());
     // list.push_back(make_unique<MatrixDiagonalSum>());
-    list.push_back(make_unique<ScoreofParentheses>());
+    // list.push_back(make_unique<ScoreofParentheses>());
+    list.push_back(make_unique<NextGreaterNodeInLinkedList>());
 
     for (auto &e : list) {
         e->test();
