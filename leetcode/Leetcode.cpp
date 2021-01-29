@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-28 15:11:10
+ * @Last Modified time: 2021-01-29 17:44:48
  */
 #include <iostream>
 #include <vector>
@@ -43,6 +43,7 @@
 #include "medium/ScoreAfterFlippingMatrix.hpp"
 #include "medium/ScoreofParentheses.hpp"
 #include "medium/SwappingNodesinaLinkedList.hpp"
+#include "medium/CarPooling.hpp"
 
 //困难
 #include "hard/CreateMaximumNumber.hpp"
@@ -87,7 +88,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<RichestCustomerWealth>());
     // list.push_back(make_unique<MatrixDiagonalSum>());
     // list.push_back(make_unique<ScoreofParentheses>());
-    list.push_back(make_unique<NextGreaterNodeInLinkedList>());
+    // list.push_back(make_unique<NextGreaterNodeInLinkedList>());
+    list.push_back(make_unique<CarPooling>());
 
     for (auto &e : list) {
         e->test();
