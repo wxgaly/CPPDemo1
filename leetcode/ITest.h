@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:48:01
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-28 15:22:04
+ * @Last Modified time: 2021-02-01 14:45:30
  */
 
 #ifndef _ITEST_H_
@@ -18,6 +18,8 @@
 #include <stack>
 #include <unordered_map>
 #include <vector>
+#include <unordered_set>
+#include <numeric>
 
 using namespace std;
 
