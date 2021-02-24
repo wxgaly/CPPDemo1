@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-01-29 17:44:48
+ * @Last Modified time: 2021-02-24 15:50:43
  */
 #include <iostream>
 #include <vector>
@@ -13,6 +13,7 @@
 #include "easy/DesignParkingSystem.hpp"
 #include "easy/FibonacciNumber.hpp"
 #include "easy/FirstUniqueCharacterinaString.hpp"
+#include "easy/FlippinganImage.hpp"
 #include "easy/GuessNumbers.hpp"
 #include "easy/IncreasingDecreasingString.hpp"
 #include "easy/KidsWiththeGreatestNumberofCandies.hpp"
@@ -31,6 +32,7 @@
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
+#include "medium/CarPooling.hpp"
 #include "medium/CountCompleteTreeNodes.hpp"
 #include "medium/Dota2Senate.hpp"
 #include "medium/FourSumII.hpp"
@@ -43,7 +45,6 @@
 #include "medium/ScoreAfterFlippingMatrix.hpp"
 #include "medium/ScoreofParentheses.hpp"
 #include "medium/SwappingNodesinaLinkedList.hpp"
-#include "medium/CarPooling.hpp"
 
 //困难
 #include "hard/CreateMaximumNumber.hpp"
@@ -89,7 +90,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<MatrixDiagonalSum>());
     // list.push_back(make_unique<ScoreofParentheses>());
     // list.push_back(make_unique<NextGreaterNodeInLinkedList>());
-    list.push_back(make_unique<CarPooling>());
+    // list.push_back(make_unique<CarPooling>());
+    list.push_back(make_unique<FlippinganImage>());
 
     for (auto &e : list) {
         e->test();
