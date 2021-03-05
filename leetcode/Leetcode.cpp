@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-02-24 15:50:43
+ * @Last Modified time: 2021-03-05 14:54:50
  */
 #include <iostream>
 #include <vector>
@@ -15,6 +15,7 @@
 #include "easy/FirstUniqueCharacterinaString.hpp"
 #include "easy/FlippinganImage.hpp"
 #include "easy/GuessNumbers.hpp"
+#include "easy/ImplementQueueusingStacks.hpp"
 #include "easy/IncreasingDecreasingString.hpp"
 #include "easy/KidsWiththeGreatestNumberofCandies.hpp"
 #include "easy/LastStoneWeight.hpp"
@@ -91,7 +92,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<ScoreofParentheses>());
     // list.push_back(make_unique<NextGreaterNodeInLinkedList>());
     // list.push_back(make_unique<CarPooling>());
-    list.push_back(make_unique<FlippinganImage>());
+    // list.push_back(make_unique<FlippinganImage>());
+    list.push_back(make_unique<ImplementQueueusingStacks>());
 
     for (auto &e : list) {
         e->test();
