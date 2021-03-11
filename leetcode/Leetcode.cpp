@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-03-05 14:54:50
+ * @Last Modified time: 2021-03-11 19:47:35
  */
 #include <iostream>
 #include <vector>
@@ -36,6 +36,7 @@
 #include "medium/CarPooling.hpp"
 #include "medium/CountCompleteTreeNodes.hpp"
 #include "medium/Dota2Senate.hpp"
+#include "medium/FindtheWinnerofanArrayGame.hpp"
 #include "medium/FourSumII.hpp"
 #include "medium/MaximumNumberofCoinsYouCanGet.hpp"
 #include "medium/MergeInBetweenLinkedLists.hpp"
@@ -93,7 +94,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<NextGreaterNodeInLinkedList>());
     // list.push_back(make_unique<CarPooling>());
     // list.push_back(make_unique<FlippinganImage>());
-    list.push_back(make_unique<ImplementQueueusingStacks>());
+    // list.push_back(make_unique<ImplementQueueusingStacks>());
+    list.push_back(make_unique<FindtheWinnerofanArrayGame>());
 
     for (auto &e : list) {
         e->test();
