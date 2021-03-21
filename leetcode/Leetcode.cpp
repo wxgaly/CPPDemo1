@@ -2,7 +2,7 @@
  * @Author: gary.wang
  * @Date: 2020-11-04 14:34:50
  * @Last Modified by: gary.wang
- * @Last Modified time: 2021-03-11 19:47:35
+ * @Last Modified time: 2021-03-21 17:12:21
  */
 #include <iostream>
 #include <vector>
@@ -46,6 +46,7 @@
 #include "medium/PartitioningIntoMinimumNumberOfDeciBinaryNumbers.hpp"
 #include "medium/ScoreAfterFlippingMatrix.hpp"
 #include "medium/ScoreofParentheses.hpp"
+#include "medium/SetMatrixZeroes.hpp"
 #include "medium/SwappingNodesinaLinkedList.hpp"
 
 //困难
@@ -95,7 +96,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<CarPooling>());
     // list.push_back(make_unique<FlippinganImage>());
     // list.push_back(make_unique<ImplementQueueusingStacks>());
-    list.push_back(make_unique<FindtheWinnerofanArrayGame>());
+    // list.push_back(make_unique<FindtheWinnerofanArrayGame>());
+    list.push_back(make_unique<SetMatrixZeroes>());
 
     for (auto &e : list) {
         e->test();
