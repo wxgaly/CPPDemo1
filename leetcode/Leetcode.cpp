@@ -31,6 +31,7 @@
 #include "easy/TakeCoins.hpp"
 #include "easy/XOROperationinanArray.hpp"
 #include "easy/MinimumDistanceBetweenBSTNodes.hpp"
+#include "easy/DefusetheBomb.hpp"
 
 //中等
 #include "medium/ArithmeticSubarrays.hpp"
@@ -99,7 +100,8 @@ void Leetcode::test() {
     // list.push_back(make_unique<ImplementQueueusingStacks>());
     // list.push_back(make_unique<FindtheWinnerofanArrayGame>());
     // list.push_back(make_unique<SetMatrixZeroes>());
-    list.push_back(make_unique<MinimumDistanceBetweenBSTNodes>());
+    // list.push_back(make_unique<MinimumDistanceBetweenBSTNodes>());
+    list.push_back(make_unique<DefusetheBomb>());
 
     for (auto &e : list) {
         e->test();
