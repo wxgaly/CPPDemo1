@@ -164,8 +164,41 @@ void testLeetcode() {
     leetcode.test();
 }
 
-int main()
-{
-    testLeetcode();
+void testMemcpy() {
+    int len = 12;
+    int arr1[6] = {1, 2, 3, 4, 5, 6};
+    int arr2[6] = {7, 8, 9, 10, 11, 12};
+    int arr3[12] = {0};
+    int *ptr = arr3;
+    for (size_t i = 0; i < len; i++) {
+        cout << arr3[i] << ",";
+    }
+    cout << endl;
+
+    for (size_t i = 0; i < 6; i++) {
+        cout << arr1[i] << ",";
+    }
+    cout << endl;
+    cout << "int len : " << sizeof(int) << endl;
+
+    // 目标地址，源地址，拷贝的字节数
+    // 这里因为是int数组，先计算int所占用的字节数，一般是4个byte，数组长度为6，所以是sizeof(int) * 6
+    memcpy(ptr, arr1, sizeof(int) * 6);
+    for (size_t i = 0; i < len; i++) {
+        cout << arr3[i] << ",";
+    }
+    cout << endl;
+
+    ptr += 6;
+
+    memcpy(ptr, arr2, sizeof(int) * 6);
+    for (size_t i = 0; i < len; i++) {
+        cout << arr3[i] << ",";
+    }
+    cout << endl;
+}
+
+int main() {
+    testMemcpy();
     return 0;
 }
